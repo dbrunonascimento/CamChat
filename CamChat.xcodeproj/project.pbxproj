@@ -73,6 +73,8 @@
 		609CA102217A8DE5008EB83D /* MemorySenderVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CA0FD217A8DE5008EB83D /* MemorySenderVM.swift */; };
 		609CA103217A8DE5008EB83D /* SearchControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CA0FE217A8DE5008EB83D /* SearchControllerVM.swift */; };
 		609CA104217A8DE5008EB83D /* ConversationCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CA0FF217A8DE5008EB83D /* ConversationCellVM.swift */; };
+		609E4D84235FD049003504B5 /* HelpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609E4D83235FD049003504B5 /* HelpKit.framework */; };
+		609E4D85235FD049003504B5 /* HelpKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 609E4D83235FD049003504B5 /* HelpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		60A1D49C2129D3E800C52FA3 /* PhotoOptionsMiniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A1D49B2129D3E800C52FA3 /* PhotoOptionsMiniVC.swift */; };
 		60A1D49E2129D43D00C52FA3 /* PhotoOptionsMiniTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A1D49D2129D43D00C52FA3 /* PhotoOptionsMiniTransitioning.swift */; };
 		60A5ED33216CD8CD0000BEBC /* PhotoVideoWindowViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A5ED32216CD8CD0000BEBC /* PhotoVideoWindowViewer.swift */; };
@@ -98,9 +100,6 @@
 		60D11BB6213B869E00827010 /* ConvenienceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D11BB5213B869E00827010 /* ConvenienceExtensions.swift */; };
 		60D11BB8213C3C3300827010 /* TempUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D11BB7213C3C3300827010 /* TempUser.swift */; };
 		60D11BBA213C41EC00827010 /* DataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D11BB9213C41EC00827010 /* DataCoordinator.swift */; };
-		60D5CADD217D7F87006B8C4C /* HelpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D5CADC217D7F87006B8C4C /* HelpKit.framework */; };
-		60D5CADE217D7F92006B8C4C /* HelpKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 60D5CADC217D7F87006B8C4C /* HelpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		60D5CADF217D7F9A006B8C4C /* HelpKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60D5CADC217D7F87006B8C4C /* HelpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		60D72CC821698973000C1E78 /* MemorySenderBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D72CC721698973000C1E78 /* MemorySenderBottomBar.swift */; };
 		60D72CCD216A3809000C1E78 /* MemorySenderTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D72CCC216A3809000C1E78 /* MemorySenderTransitioning.swift */; };
 		60D72CCF216A7BE4000C1E78 /* Message_MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D72CCE216A7BE4000C1E78 /* Message_MessageData.swift */; };
@@ -152,8 +151,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				609E4D85235FD049003504B5 /* HelpKit.framework in Embed Frameworks */,
 				600190E1215AD58D007F8C1F /* AVFoundation.framework in Embed Frameworks */,
-				60D5CADF217D7F9A006B8C4C /* HelpKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -164,7 +163,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				60D5CADE217D7F92006B8C4C /* HelpKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +238,7 @@
 		609CA0FD217A8DE5008EB83D /* MemorySenderVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemorySenderVM.swift; sourceTree = "<group>"; };
 		609CA0FE217A8DE5008EB83D /* SearchControllerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchControllerVM.swift; sourceTree = "<group>"; };
 		609CA0FF217A8DE5008EB83D /* ConversationCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationCellVM.swift; sourceTree = "<group>"; };
+		609E4D83235FD049003504B5 /* HelpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HelpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A1D49B2129D3E800C52FA3 /* PhotoOptionsMiniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionsMiniVC.swift; sourceTree = "<group>"; };
 		60A1D49D2129D43D00C52FA3 /* PhotoOptionsMiniTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOptionsMiniTransitioning.swift; sourceTree = "<group>"; };
 		60A5ED32216CD8CD0000BEBC /* PhotoVideoWindowViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVideoWindowViewer.swift; sourceTree = "<group>"; };
@@ -266,7 +265,6 @@
 		60D11BB5213B869E00827010 /* ConvenienceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvenienceExtensions.swift; sourceTree = "<group>"; };
 		60D11BB7213C3C3300827010 /* TempUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempUser.swift; sourceTree = "<group>"; };
 		60D11BB9213C41EC00827010 /* DataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCoordinator.swift; sourceTree = "<group>"; };
-		60D5CADC217D7F87006B8C4C /* HelpKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HelpKit.framework; sourceTree = "<group>"; };
 		60D72CC721698973000C1E78 /* MemorySenderBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySenderBottomBar.swift; sourceTree = "<group>"; };
 		60D72CCC216A3809000C1E78 /* MemorySenderTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySenderTransitioning.swift; sourceTree = "<group>"; };
 		60D72CCE216A7BE4000C1E78 /* Message_MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_MessageData.swift; sourceTree = "<group>"; };
@@ -311,7 +309,7 @@
 			files = (
 				600190E0215AD58D007F8C1F /* AVFoundation.framework in Frameworks */,
 				41B44AC0775625C522E2A591 /* Pods_CamChat.framework in Frameworks */,
-				60D5CADD217D7F87006B8C4C /* HelpKit.framework in Frameworks */,
+				609E4D84235FD049003504B5 /* HelpKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,7 +695,7 @@
 		AECC994EA945A06737C7AD39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60D5CADC217D7F87006B8C4C /* HelpKit.framework */,
+				609E4D83235FD049003504B5 /* HelpKit.framework */,
 				600190DE215AD581007F8C1F /* AVFoundation.framework */,
 				85F770E7C208483F91509480 /* Pods_CamChat.framework */,
 				EA4F34E521F2D73C1D0EA8D4 /* Pods_CamChatTests.framework */,
@@ -1228,6 +1226,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CamChat",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HelpKit-master",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/CamChat/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -1255,6 +1254,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CamChat",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HelpKit-master",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/CamChat/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -1277,6 +1277,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N44KF5BXBU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelpKit-master",
+				);
 				INFOPLIST_FILE = CamChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1299,6 +1303,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N44KF5BXBU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelpKit-master",
+				);
 				INFOPLIST_FILE = CamChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
