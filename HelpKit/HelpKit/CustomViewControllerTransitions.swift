@@ -107,12 +107,17 @@ open class HKVCTransBrain{
 
 open class HKVCTransDelegate<BrainType: HKVCTransBrain, AnimationControllerType: HKVCTransAnimationController<BrainType>>: NSObject, UIViewControllerTransitioningDelegate {
     
-
     public let brain: BrainType
     
-    
     public init(presenter: HKVCTransParticipator, presented: HKVCTransParticipator){
-        self.brain = BrainType(presenter: presenter, presented: presented)
+        self.brain = BrainType(presenter: presenter, presented: presented);
+        
+        {
+            let vc = presented.viewController
+            if #available(iOS 13.0, *), vc.modalPresentationStyle == .pageSheet {
+                presented.viewController.modalPresentationStyle = .fullScreen
+            }
+        }()
     }
     
     open func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

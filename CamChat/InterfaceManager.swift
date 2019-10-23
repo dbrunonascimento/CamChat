@@ -23,6 +23,9 @@ class InterfaceManager{
     
     private func getWindow() -> UIWindow{
         let window = UIWindow(frame: UIScreen.main.bounds)
+        if #available(iOS 13.0, *) {
+            window.overrideUserInterfaceStyle = .light
+        }
         if APP_INSETS.isNil { APP_INSETS = window.safeAreaInsets }
         [0, 0].forEach{window.gestureRecognizers?.remove(at: $0)}
         return window

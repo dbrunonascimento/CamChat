@@ -185,6 +185,7 @@ class LoginFormVCTemplate: UIViewController, LoginInputFormViewDelegate{
         bottomSeamHider.pin(addTo: view, anchors: [.left: view.leftAnchor, .right: view.rightAnchor, .bottom: view.bottomAnchor], constants: [.height: APP_INSETS.bottom])
         
         view.layoutIfNeeded()
+//        view.setNeedsLayout()
 
     }
     
