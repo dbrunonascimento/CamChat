@@ -40,8 +40,6 @@ public struct HKError: LocalizedError{
 }
 
 
-public var statusBar: UIWindow{
-    return UIApplication.shared.value(forKey: "statusBarWindow") as! UIWindow
-}
+
     
 

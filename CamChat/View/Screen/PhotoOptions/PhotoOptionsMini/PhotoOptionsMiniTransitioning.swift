@@ -47,8 +47,7 @@ class PhotoOptionsMiniTransitioningBrain: HKVCTransBrain{
     override func carryOutUnanimatedPresentationAction() {
         bluryView.alpha = 1
         super.carryOutUnanimatedPresentationAction()
-        // because for some reason the status bar is not disappearing, even though in the viewController class I have preferrsStatusBarHidden to true
-        statusBar.alpha = 0
+        
     }
     
     override func prepareForDismissal() {
@@ -57,8 +56,7 @@ class PhotoOptionsMiniTransitioningBrain: HKVCTransBrain{
     
     override func carryOutUnanimatedDismissalAction() {
         bluryView.alpha = 0
-        // because for some reason the status bar is not disappearing, even though in the viewController class I have preferrsStatusBarHidden to true
-        statusBar.alpha = 1
+        
         super.carryOutUnanimatedDismissalAction()
     }
     

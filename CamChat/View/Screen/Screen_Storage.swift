@@ -13,7 +13,10 @@ class Screen: UIViewController, PageScrollingInteractorDelegate, SCScrollViewDel
     
     
     
-    init() { super.init(nibName: nil, bundle: nil) }
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        self.modalPresentationStyle = .fullScreen
+    }
   
     
     override func viewDidLoad() {

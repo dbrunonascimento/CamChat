@@ -24,7 +24,7 @@ class CameraPhotoVideoPreviewVC: UIViewController{
     init(_ data: PhotoVideoData){
         self.photoVideoData = data
         super.init(nibName: nil, bundle: nil)
-        
+        self.modalPresentationStyle = .fullScreen
         self.imageView.image = data.image
         
         if case let .video(url, _) = data{

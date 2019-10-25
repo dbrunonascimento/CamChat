@@ -198,6 +198,7 @@ class PhotoLibraryViewerTransitioningDelegate: NSObject, UIViewControllerTransit
 
         brain = PhotoLibraryViewerTransitioningBrain(presenter: presenter, presented: presented)
         interactor = PhotoLibraryViewerInteractionController(brain: brain)
+        presented.viewController.modalPresentationStyle = .fullScreen
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

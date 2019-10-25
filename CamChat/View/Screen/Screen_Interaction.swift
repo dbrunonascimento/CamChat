@@ -23,10 +23,10 @@ extension Screen {
         
         if actualOutset >= totalOutset{
             
-            let extraOutset = actualOutset - totalOutset
+            
             topGradientView.alpha = 0
             topBarHeightConstraint.constant = actualOutset
-            statusBar.frame.origin.y = extraOutset * 0.3
+            
             self.view.layoutIfNeeded()
             
         } else { adjustTopGradientLayerViewTo_ScrollViewScrolled(scrollView: scrollView) }
