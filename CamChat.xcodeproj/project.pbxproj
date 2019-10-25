@@ -18,6 +18,7 @@
 		6016835E2160E3C800948791 /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016835D2160E3C800948791 /* PhotoWriter.swift */; };
 		601D0D34210DD656007C47C9 /* ChatTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D0D33210DD656007C47C9 /* ChatTopBar.swift */; };
 		601D0D36210DEDCA007C47C9 /* ScreenTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D0D35210DEDCA007C47C9 /* ScreenTopBar.swift */; };
+		601F47C523609AC200D8EAD7 /* HelpKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 609E4D83235FD049003504B5 /* HelpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		601FADC7210A8581003094AF /* Screen_Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FADC6210A8581003094AF /* Screen_Interaction.swift */; };
 		601FADC9210A87F8003094AF /* Screen_Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FADC8210A87F8003094AF /* Screen_Layout.swift */; };
 		602D5045216AE80D00CBE14E /* TempMessage_Conformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602D5044216AE80D00CBE14E /* TempMessage_Conformance.swift */; };
@@ -53,6 +54,8 @@
 		605F1B8120FCB3E4003CCD0B /* Login_SignUp_Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605F1B8020FCB3E4003CCD0B /* Login_SignUp_Name.swift */; };
 		605F1B8320FCB575003CCD0B /* SimpleLabelledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605F1B8220FCB575003CCD0B /* SimpleLabelledButton.swift */; };
 		605F1B8520FCC8F1003CCD0B /* Login_SignUp_Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605F1B8420FCC8F1003CCD0B /* Login_SignUp_Email.swift */; };
+		606D22E82362751600C7E6CC /* HelpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609E4D83235FD049003504B5 /* HelpKit.framework */; };
+		606D22E92362755E00C7E6CC /* HelpKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 609E4D83235FD049003504B5 /* HelpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		606FBAD120E9110C00F6FA58 /* ConversationsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606FBAD020E9110C00F6FA58 /* ConversationsTableView.swift */; };
 		606FBAD320E9112200F6FA58 /* PhotoLibraryCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606FBAD220E9112200F6FA58 /* PhotoLibraryCollectionVC.swift */; };
 		606FBAD520E91CD800F6FA58 /* PhotoLibraryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606FBAD420E91CD800F6FA58 /* PhotoLibraryLayout.swift */; };
@@ -73,8 +76,6 @@
 		609CA102217A8DE5008EB83D /* MemorySenderVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CA0FD217A8DE5008EB83D /* MemorySenderVM.swift */; };
 		609CA103217A8DE5008EB83D /* SearchControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CA0FE217A8DE5008EB83D /* SearchControllerVM.swift */; };
 		609CA104217A8DE5008EB83D /* ConversationCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CA0FF217A8DE5008EB83D /* ConversationCellVM.swift */; };
-		609E4D84235FD049003504B5 /* HelpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609E4D83235FD049003504B5 /* HelpKit.framework */; };
-		609E4D85235FD049003504B5 /* HelpKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 609E4D83235FD049003504B5 /* HelpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		60A1D49C2129D3E800C52FA3 /* PhotoOptionsMiniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A1D49B2129D3E800C52FA3 /* PhotoOptionsMiniVC.swift */; };
 		60A1D49E2129D43D00C52FA3 /* PhotoOptionsMiniTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A1D49D2129D43D00C52FA3 /* PhotoOptionsMiniTransitioning.swift */; };
 		60A5ED33216CD8CD0000BEBC /* PhotoVideoWindowViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A5ED32216CD8CD0000BEBC /* PhotoVideoWindowViewer.swift */; };
@@ -151,7 +152,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				609E4D85235FD049003504B5 /* HelpKit.framework in Embed Frameworks */,
+				601F47C523609AC200D8EAD7 /* HelpKit.framework in Embed Frameworks */,
 				600190E1215AD58D007F8C1F /* AVFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -163,6 +164,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				606D22E92362755E00C7E6CC /* HelpKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +309,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606D22E82362751600C7E6CC /* HelpKit.framework in Frameworks */,
 				600190E0215AD58D007F8C1F /* AVFoundation.framework in Frameworks */,
 				41B44AC0775625C522E2A591 /* Pods_CamChat.framework in Frameworks */,
-				609E4D84235FD049003504B5 /* HelpKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1256,6 +1258,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/HelpKit-master",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/CamChat/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (

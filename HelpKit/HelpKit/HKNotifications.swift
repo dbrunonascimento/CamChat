@@ -23,22 +23,13 @@ extension HKNotification where ActionParameterType == Void{
 **/
 
 
-open class HKNotification<ActionParameterType>: WeakWrapperDelegate{
+open class HKNotification<ActionParameterType>{
     
-    public init(){}
-    
-    public func wrapperValueWasSetToNil(wrapper: WeakWrapperProtocol) {
-        var x = 0
-        
-        for sender in senderArray{
-            if sender === wrapper.unTypedSelf{
-                senderArray.remove(at: x)
-                let _ = actionsArray.remove(at: x)
-                x -= 1
-            }
-            x += 1
-        }
+    public init(){
+        print()
     }
+    
+   
     
     private var senderArray = [WeakWrapper<AnyObject>]()
     
